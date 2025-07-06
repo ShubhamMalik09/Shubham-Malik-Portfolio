@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion"
 import { Button } from './ui/button'
 import {
@@ -16,8 +16,19 @@ import {
 } from "lucide-react"
 
 const AboutSection = ({ mouseX, mouseY }) => {
-  const rotateX = useTransform(mouseY, [0, window.innerHeight], [5, -5])
-  const rotateY = useTransform(mouseX, [0, window.innerWidth], [-5, 5])
+  const [windowSize, setWindowSize] = useState({ width: 0, height: 0 })
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      })
+    }
+  }, [])
+
+  const rotateX = useTransform(mouseY, [0, windowSize.height], [5, -5])
+  const rotateY = useTransform(mouseX, [0, windowSize.width], [-5, 5])
 
   return (
     <motion.section
@@ -30,7 +41,7 @@ const AboutSection = ({ mouseX, mouseY }) => {
     >
       <motion.div
         style={{ rotateX, rotateY }}
-        className="glass-effect max-w-6xl mx-auto bg-gradient-to-br from-black/50 to-purple-900/30 backdrop-blur-sm rounded-3xl p-8 border border-purple-700/50"
+        className="glass-effect max-w-6xl mx-auto bg-gradient-to-br from-black/50 to-blue-900/30 backdrop-blur-sm rounded-3xl p-8 border border-blue-700/50"
       >
         <motion.h2
           initial={{ x: -100, opacity: 0 }}
@@ -80,18 +91,10 @@ const AboutSection = ({ mouseX, mouseY }) => {
               <Button
                 variant="outline"
                 size="sm"
-                className="border-purple-600 text-white hover:bg-purple-800 bg-transparent transition-all duration-300"
+                className="border-blue-600 text-white hover:bg-cyan-800 bg-transparent transition-all duration-300"
               >
                 <MapPin className="w-4 h-4 mr-2" />
-                San Francisco, CA
-              </Button>
-              <Button
-                variant="outline"
-                size="sm"
-                className="border-purple-600 text-white hover:bg-purple-800 bg-transparent transition-all duration-300"
-              >
-                <Mail className="w-4 h-4 mr-2" />
-                Available for Work
+                New Delhi, India
               </Button>
             </motion.div>
           </motion.div>

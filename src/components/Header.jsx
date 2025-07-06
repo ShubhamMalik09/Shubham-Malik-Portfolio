@@ -41,7 +41,7 @@ const Header = () => {
                     <Button
                         size="sm"
                         variant="outline"
-                        className="border-cyan-600 text-white hover:bg-cyan-800 bg-transparent transition-all duration-300"
+                        className="border-blue-600 text-white hover:bg-cyan-800 bg-transparent transition-all duration-300"
                     >
                         Resume
                     </Button>
@@ -49,7 +49,7 @@ const Header = () => {
                     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                     <Button
                         size="sm"
-                        className="bg-gradient-to-r from-blue-400 to-cyan-400 hover:from-cyan-600 hover:to-cyan-900 transition-all duration-300"
+                        className="bg-gradient-to-r from-blue-500 to-teal-500 hover:from-blue-700 hover:to-teal-700 transition-all duration-300"
                     >
                         Hire Me
                     </Button>

@@ -65,7 +65,7 @@ const HeroSection = () => {
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Button
               size="lg"
-              className="bg-gradient-to-r from-blue-500 to-teal-500 hover:from-blue-600 hover:to-teal-600 transition-all duration-300"
+              className="bg-gradient-to-r from-blue-500 to-teal-500 hover:from-blue-700 hover:to-teal-700 transition-all duration-300"
             >
               View My Work
             </Button>
@@ -74,7 +74,7 @@ const HeroSection = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-purple-600 text-white hover:bg-purple-800 bg-transparent transition-all duration-300"
+              className="border-blue-600 text-white hover:bg-cyan-800 bg-transparent transition-all duration-300"
             >
               Download Resume
             </Button>
@@ -93,7 +93,7 @@ const HeroSection = () => {
               href="#"
               whileHover={{ scale: 1.2, rotate: 360 }}
               transition={{ duration: 0.3 }}
-              className="text-gray-400 hover:text-purple-400 transition-colors"
+              className="text-gray-400 hover:text-blue-400 transition-colors"
             >
               <Icon className="w-6 h-6" />
             </motion.a>
