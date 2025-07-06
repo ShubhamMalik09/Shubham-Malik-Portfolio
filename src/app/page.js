@@ -1,8 +1,10 @@
 "use client"
 
 import AboutSection from "@/components/AboutSection";
+import EducationSection from "@/components/EducationSection";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import SkillsSection from "@/components/SkillsSection";
 import { motion, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion"
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -44,7 +46,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-black to-black text-white overflow-x-hidden">
       <motion.div
-        className="fixed w-12 h-12 bg-purple-500/40 rounded-full pointer-events-none z-50 mix-blend-screen blur-sm"
+        className="fixed w-12 h-12 bg-blue-500/40 rounded-full pointer-events-none z-50 mix-blend-screen blur-sm"
         style={{
           x: smoothMouseX,
           y: smoothMouseY,
@@ -64,9 +66,9 @@ export default function Home() {
       <div className="relative z-10 pt-20">
         <HeroSection />
         <AboutSection mouseX={mouseX} mouseY={mouseY} />
-        {/*<SkillsSection />
+        <SkillsSection />
         <EducationSection />
-        <ExperienceSection />
+        {/*<ExperienceSection />
         <ProjectsSection mouseX={mouseX} mouseY={mouseY} />
         <TestimonialsSection />
         <ContactSection mouseX={mouseX} mouseY={mouseY} /> */}
