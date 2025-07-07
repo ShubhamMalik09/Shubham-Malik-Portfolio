@@ -47,7 +47,7 @@ const SkillsSection = () => {
               }}
               viewport={{ once: true }}
             >
-              <Card className="bg-black/60 border-purple-700 backdrop-blur-sm hover:bg-black/70 transition-all duration-300 text-center h-full">
+              <Card className="bg-black/60 border-blue-700 backdrop-blur-sm hover:bg-black/70 transition-all duration-300 text-center h-full">
                 <CardContent className=" flex flex-col items-center justify-center h-full">
                   <motion.div
                     className={`w-12 h-12 rounded-full ${skill.bgColor} flex items-center justify-center mb-4 p-2`}

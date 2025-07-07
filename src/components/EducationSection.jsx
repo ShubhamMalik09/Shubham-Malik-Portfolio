@@ -23,8 +23,8 @@ const EducationSection = () => {
       <div className="max-w-6xl pb-10 mx-auto relative">
         <div className="absolute -left-12 top-0 bottom-0 w-1 bg-gradient-to-b from-transparent via-blue-700/50 to-transparent">
             <motion.div
-            style={{ height: progressHeight }}
-            className="w-full bg-gradient-to-b from-blue-400 via-teal-500 to-cyan-500 shadow-lg shadow-purple-500/50 rounded-full"
+              style={{ height: progressHeight }}
+              className="w-full bg-gradient-to-b from-blue-400 to-cyan-500 shadow-lg shadow-purple-500/50 rounded-full"
             />
         </div>
         <motion.h2

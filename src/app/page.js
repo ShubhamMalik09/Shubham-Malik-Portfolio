@@ -1,7 +1,9 @@
 "use client"
 
 import AboutSection from "@/components/AboutSection";
+import ContactSection from "@/components/ContactSection";
 import EducationSection from "@/components/EducationSection";
+import ExperienceSection from "@/components/ExperienceSection";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import SkillsSection from "@/components/SkillsSection";
@@ -68,10 +70,10 @@ export default function Home() {
         <AboutSection mouseX={mouseX} mouseY={mouseY} />
         <SkillsSection />
         <EducationSection />
-        {/*<ExperienceSection />
-        <ProjectsSection mouseX={mouseX} mouseY={mouseY} />
-        <TestimonialsSection />
-        <ContactSection mouseX={mouseX} mouseY={mouseY} /> */}
+        <ExperienceSection />
+        {/*<ProjectsSection mouseX={mouseX} mouseY={mouseY} />
+        <TestimonialsSection />*/}
+        {/* <ContactSection mouseX={mouseX} mouseY={mouseY} />  */}
       </div>
     </div>
   );
